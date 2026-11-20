@@ -1,0 +1,60 @@
+{
+  "id": "./index.html",
+  "name": "Hussein Badr English",
+  "short_name": "HB English",
+  "description": "منصة حسين بدر لتعلّم الإنجليزية خطوة بخطوة من الأساسيات إلى الاستخدام العملي.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#102B4C",
+  "theme_color": "#102B4C",
+  "categories": [
+    "education",
+    "learning"
+  ],
+  "icons": [
+    {
+      "src": "assets/img/hbe-logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/hbe-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/hbe-logo-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "الدروس",
+      "url": "lessons.html"
+    },
+    {
+      "name": "البطاقات",
+      "url": "flashcards.html"
+    },
+    {
+      "name": "اختبار المستوى",
+      "url": "placement-test.html"
+    },
+    {
+      "name": "تقدمي",
+      "url": "dashboard.html"
+    }
+  ]
+}
