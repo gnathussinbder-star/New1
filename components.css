@@ -1,0 +1,8 @@
+/* HBE v10 shared form and utility components */
+input:not([type=checkbox]):not([type=radio]),textarea,select{width:100%;max-width:100%;border:1px solid #cbd6e5;border-radius:12px;padding:12px 14px;background:#fff;color:#102B4C;box-shadow:0 2px 8px rgba(16,43,76,.04)}
+textarea{min-height:120px;resize:vertical}input[type=checkbox],input[type=radio]{accent-color:#102B4C;width:18px;height:18px;vertical-align:middle;margin-inline-end:8px}
+label{display:block;margin:10px 0;color:inherit;font-weight:600}details{background:#fff;border:1px solid #dfe6ef;border-radius:14px;padding:14px 16px;margin:10px 0;color:#102B4C}details summary{cursor:pointer;font-weight:700;color:#102B4C}details[open] summary{color:#102B4C;margin-bottom:8px}
+.access-tools{display:inline-flex;gap:6px;align-items:center}.access-tools button{min-width:36px;padding:5px 8px;border:1px solid #7598BD;border-radius:9px;background:#fff;color:#102B4C;font-weight:700;cursor:pointer}
+.page-hero{margin:30px 0 22px;padding:clamp(24px,4vw,44px);border-radius:28px;background:linear-gradient(135deg,#102B4C,#1d4774);color:#fff;border-bottom:7px solid #FFD447}.page-hero h1{margin:8px 0 12px;font-size:clamp(28px,4vw,44px);line-height:1.35}.page-hero p{color:#e5edf7;max-width:760px}.page-hero .eyebrow{color:#FFD447}
+.card a:not(.btn),.sitemap-list a{color:#1B4F8F;text-decoration:underline;text-decoration-color:#FFD447;text-underline-offset:3px}
+@media(max-width:600px){.page-hero{padding:24px 18px}.card{padding:16px}}
