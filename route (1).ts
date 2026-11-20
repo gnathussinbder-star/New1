@@ -1,0 +1,4 @@
+import { NextResponse } from 'next/server';
+import { requireAdmin } from '@/lib/admin-auth';
+import { createAdminClient } from '@/lib/supabase/admin';
+export async function POST(request:Request){const auth=await requireAdmin();if(!auth.ok)return NextResponse.json({error:'Administrator access required.'},{status:auth.status});try{const {slug,is_published}=await request.json();if(typeof slug!=='string'||typeof is_published!=='boolean')return NextResponse.json({error:'Invalid lesson setting.'},{status:400});const db=createAdminClient();const {error}=await db.from('lesson_overrides').upsert({lesson_slug:slug,is_published,updated_by:auth.user.id,updated_at:new Date().toISOString()},{onConflict:'lesson_slug'});if(error)throw error;return NextResponse.json({success:true});}catch(e){return NextResponse.json({error:e instanceof Error?e.message:'Update failed.'},{status:500});}}
